@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEAM ACADEMY — Learn in Black & White</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="logo">TA</div>
+        <div>TEAM ACADEMY</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="fees.html">Fees</a>
+        <span id="auth-slot"></span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="grid cols-2">
+          <div>
+            <div class="badge">Monochrome Excellence</div>
+            <h1 class="headline">Education in pure black & white.</h1>
+            <p class="sub">At TEAM ACADEMY, we focus on clarity. Tuition for boys and girls in Intermediate MPC, 10th (Maths), and Computer Courses. No distractions—just learning.</p>
+            <div class="spacer"></div>
+            <div class="inline">
+              <a class="btn primary" href="signup.html">Join Now</a>
+              <a class="btn" href="courses.html">Explore Courses</a>
+            </div>
+          </div>
+          <div class="hero-art" style="min-height: 260px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid cols-3">
+        <div class="kpi">
+          <div>
+            <div class="label">Focus Areas</div>
+            <div class="value">MPC • Maths • CS</div>
+          </div>
+          <div class="badge">Core</div>
+        </div>
+        <div class="kpi">
+          <div>
+            <div class="label">Attendance</div>
+            <div class="value">Track & Save</div>
+          </div>
+          <div class="badge">Live</div>
+        </div>
+        <div class="kpi">
+          <div>
+            <div class="label">Fees</div>
+            <div class="value">Simple & Clear</div>
+          </div>
+          <div class="badge">Records</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid cols-3">
+        <div class="card">
+          <h3>Intermediate MPC</h3>
+          <p class="muted">Physics, Chemistry, Mathematics with rigorous problem practice.</p>
+          <div class="spacer"></div>
+          <a class="btn" href="courses.html#mpc">See details</a>
+        </div>
+        <div class="card">
+          <h3>10th — Maths</h3>
+          <p class="muted">Foundational mathematics for board excellence.</p>
+          <div class="spacer"></div>
+          <a class="btn" href="courses.html#class10">See details</a>
+        </div>
+        <div class="card">
+          <h3>Computer Courses</h3>
+          <p class="muted">From basics to programming—build digital confidence.</p>
+          <div class="spacer"></div>
+          <a class="btn" href="courses.html#computers">See details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> TEAM ACADEMY. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

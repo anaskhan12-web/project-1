@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses — TEAM ACADEMY</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="logo">TA</div>
+        <div>TEAM ACADEMY</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="fees.html">Fees</a>
+        <span id="auth-slot"></span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h1>Courses</h1>
+    <p class="muted">Tuition for boys and girls — Intermediate MPC, 10th Maths, and Computer courses.</p>
+
+    <div class="spacer"></div>
+
+    <div id="mpc" class="card">
+      <h3>Intermediate MPC</h3>
+      <p>Mathematics, Physics, Chemistry. Focus on problem solving, concept mastery, and exam strategy.</p>
+      <ul>
+        <li>Schedule: Mon, Wed, Fri</li>
+        <li>Format: Classroom + Practice Sets</li>
+        <li>Eligibility: Intermediate (11–12)</li>
+      </ul>
+      <a class="btn primary" href="signup.html?course=MPC">Enroll</a>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div id="class10" class="card">
+      <h3>10th — Maths Only</h3>
+      <p>Strengthen fundamentals with targeted preparation for board exams.</p>
+      <ul>
+        <li>Schedule: Tue, Thu, Sat</li>
+        <li>Format: Concept + Worksheet + Weekly Quiz</li>
+        <li>Eligibility: Class 10 students</li>
+      </ul>
+      <a class="btn primary" href="signup.html?course=Class10-Maths">Enroll</a>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div id="computers" class="card">
+      <h3>Computer Courses</h3>
+      <p>Essentials to programming—computer basics, MS Office, coding starter kits.</p>
+      <ul>
+        <li>Schedule: Weekday batches</li>
+        <li>Format: Lab-based learning</li>
+        <li>Tracks: Basics, Python Starter, Web Basics</li>
+      </ul>
+      <a class="btn primary" href="signup.html?course=Computers">Enroll</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> TEAM ACADEMY.
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

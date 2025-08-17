@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-page="attendance">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance — TEAM ACADEMY</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="attendance">
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="logo">TA</div>
+        <div>TEAM ACADEMY</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="fees.html">Fees</a>
+        <span id="auth-slot"></span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h1>Attendance</h1>
+    <p class="muted">Manage roster and mark present/absent. Data is stored locally in your browser.</p>
+
+    <div class="spacer"></div>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>Roster</h3>
+        <form id="add-student-form" class="form-row">
+          <div class="input">
+            <input name="name" id="student-name" placeholder=" " required>
+            <label for="student-name">Student name</label>
+          </div>
+          <div class="input">
+            <select name="course" id="student-course">
+              <option value="">Course (optional)</option>
+              <option>MPC</option>
+              <option>Class10-Maths</option>
+              <option>Computers</option>
+            </select>
+            <label for="student-course">Course</label>
+          </div>
+          <button class="btn" type="submit">Add Student</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Pick Date</h3>
+        <div class="input">
+          <input type="date" id="attendance-date" placeholder=" ">
+          <label for="attendance-date">Date</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="card">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Student</th>
+            <th>Course</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="roster-list"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> TEAM ACADEMY.</div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
