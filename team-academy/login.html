@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — TEAM ACADEMY</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="logo">TA</div>
+        <div>TEAM ACADEMY</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="fees.html">Fees</a>
+        <span id="auth-slot"></span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="form-card">
+      <h1>Welcome back</h1>
+      <p class="muted">Login to manage attendance and fees.</p>
+      <div class="spacer"></div>
+      <form id="login-form" class="form-row">
+        <div class="input">
+          <input id="login-email" name="email" type="email" placeholder=" " required>
+          <label for="login-email">Email</label>
+        </div>
+        <div class="input">
+          <input id="login-password" name="password" type="password" placeholder=" " required>
+          <label for="login-password">Password</label>
+          <div class="hint"><button type="button" id="toggle-login-password" class="btn" style="padding:4px 8px;">Show/Hide</button></div>
+        </div>
+        <button class="btn primary" type="submit">Login</button>
+      </form>
+      <div class="spacer"></div>
+      <p class="center muted">No account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> TEAM ACADEMY.</div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

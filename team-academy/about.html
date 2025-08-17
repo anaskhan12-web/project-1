@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — TEAM ACADEMY</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="logo">TA</div>
+        <div>TEAM ACADEMY</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="fees.html">Fees</a>
+        <span id="auth-slot"></span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container grid cols-2">
+      <div>
+        <h1>About TEAM ACADEMY</h1>
+        <p class="muted">Clarity-first learning in a bold black-and-white aesthetic.</p>
+        <div class="spacer"></div>
+        <div class="card">
+          <h3>Who we teach</h3>
+          <p>We offer focused tuition for boys and girls in:</p>
+          <ul>
+            <li>Intermediate MPC (Maths, Physics, Chemistry)</li>
+            <li>10th class — Maths specialization</li>
+            <li>Computer courses — fundamentals to programming</li>
+          </ul>
+        </div>
+        <div class="spacer"></div>
+        <div class="card">
+          <h3>Our approach</h3>
+          <p>Concept clarity, iterative practice, and personalized feedback. Attendance and fees are transparent and trackable online.</p>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Contact</h3>
+          <p>Email: info@teamacademy.example</p>
+          <p>Phone: +91 90000 00000</p>
+          <p>Location: Your City, India</p>
+        </div>
+        <div class="spacer"></div>
+        <div class="card">
+          <h3>Office Hours</h3>
+          <p>Mon–Sat: 8:00 AM – 7:00 PM</p>
+          <p>Sun: Closed</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> TEAM ACADEMY.
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

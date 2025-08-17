@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-page="fees">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fees — TEAM ACADEMY</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="fees">
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="logo">TA</div>
+        <div>TEAM ACADEMY</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="fees.html">Fees</a>
+        <span id="auth-slot"></span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h1>Fees</h1>
+    <p class="muted">Record payments and view history. Data is stored locally in your browser.</p>
+
+    <div class="grid cols-2">
+      <div class="form-card">
+        <h3>Record Payment</h3>
+        <form id="payment-form" class="form-row">
+          <div class="input">
+            <select id="payment-student-input" name="student" required></select>
+            <label for="payment-student-input">Student</label>
+          </div>
+          <div class="input">
+            <select name="course" id="payment-course">
+              <option value="">Course (optional)</option>
+              <option>MPC</option>
+              <option>Class10-Maths</option>
+              <option>Computers</option>
+            </select>
+            <label for="payment-course">Course</label>
+          </div>
+          <div class="input">
+            <input type="number" name="amount" step="0.01" min="0" placeholder=" " required>
+            <label>Amount (₹)</label>
+          </div>
+          <button class="btn primary" type="submit">Add Payment</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>History</h3>
+        <div class="input">
+          <select id="payment-student-filter"></select>
+          <label>Filter by student</label>
+        </div>
+        <div class="spacer"></div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Student</th>
+              <th>Course</th>
+              <th>Amount</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="payments-history"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> TEAM ACADEMY.</div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
